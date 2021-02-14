@@ -2,11 +2,13 @@ import java.util.Random;
 
 public class MoveWords{
 
-    public static final int EMPATE = 0;
+    private static final String SPOCK = "SEPIA";
+	private static final String LAGARTO = "TORITO";
+	public static final int EMPATE = 0;
     public static final int GANA = 1;
     public static final int PIERDE = 2;
 
-    private static final String[] validMoves = {"TIJERAS", "PAPEL", "PIEDRA", "LAGARTO", "SPOCK"};
+    private static final String[] validMoves = {"TIJERAS", "PAPEL", "PIEDRA", LAGARTO, SPOCK};
     private static final int[][] resultado =   {{0, 2, 1, 2, 1},
     											{1, 0, 2, 1, 2},
     											{2, 1, 0, 2, 1},
